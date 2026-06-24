@@ -7,7 +7,7 @@ import Pricing from "../components/Pricing";
 import Footer from "../components/Footer";
 import FitnessBanner from "../components/FitnessBanner";
 import BlogEvents from "../components/BlogEvents";
-import JoinWithUs from "../components/JoinwithUs";
+import JoinwithUs from "../components/JoinwithUs";
 
 function Home() {
     return (
@@ -20,7 +20,7 @@ function Home() {
             <Trainers />
             <Pricing />
             <BlogEvents />
-            <JoinWithUs />
+            <JoinwithUs />
             <Footer />
         </>
     );

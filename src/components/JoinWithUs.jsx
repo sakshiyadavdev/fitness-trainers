@@ -2,7 +2,7 @@ import "./css/JoinWithUs.css";
 import { FaSearchLocation } from "react-icons/fa";
 import { BsMegaphoneFill } from "react-icons/bs";
 
-function JoinWithUs() {
+function JoinwithUs() {
   return (
     <section className="join-section">
       <div className="container">
@@ -72,4 +72,4 @@ function JoinWithUs() {
   );
 }
 
-export default JoinWithUs;
+export default JoinwithUs;
