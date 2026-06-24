@@ -1,0 +1,160 @@
+.programs {
+    background: #f6f6f6;
+    padding: 90px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #222;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.section-title p {
+    font-size: 16px;
+    color: #8a8a8a;
+    margin: 0;
+}
+
+.program-card {
+    text-align: center;
+    padding: 20px 18px;
+    margin-bottom: 35px;
+    transition: all .35s ease;
+    background: transparent;
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+}
+
+.program-icon {
+    font-size: 52px;
+    color: #56c44f;
+    margin-bottom: 18px;
+}
+
+.program-card h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.program-card p {
+    font-size: 15px;
+    color: #7a7a7a;
+    line-height: 1.9;
+    margin-bottom: 25px;
+    min-height: 95px;
+}
+
+.program-card button {
+    padding: 10px 26px;
+    background: transparent;
+    border: 1px solid #d8d8d8;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    transition: .35s;
+}
+
+.program-card button:hover {
+    background: #56c44f;
+    color: white;
+    border-color: #56c44f;
+}
+
+.all-programs {
+    display: block;
+    width: 60%;
+    margin: 20px auto 0;
+    padding: 14px;
+    border: none;
+    background: #56c44f;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    transition: .3s;
+}
+
+.all-programs:hover {
+    background: #46b33d;
+}
+
+/* Tablet */
+
+@media (max-width:991px) {
+
+    .programs {
+        padding: 70px 0;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .program-card {
+        padding: 15px;
+    }
+
+    .all-programs {
+        width: 80%;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width:767px) {
+
+    .programs {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .section-title p {
+        font-size: 15px;
+    }
+
+    .program-icon {
+        font-size: 42px;
+    }
+
+    .program-card h4 {
+        font-size: 19px;
+    }
+
+    .program-card p {
+        font-size: 14px;
+        line-height: 1.7;
+        min-height: auto;
+    }
+
+    .program-card button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .all-programs {
+        width: 100%;
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding: 13px;
+    }
+
+}

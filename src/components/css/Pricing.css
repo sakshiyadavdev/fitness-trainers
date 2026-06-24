@@ -1,0 +1,161 @@
+.pricing-section {
+    padding: 110px 0;
+    background: #f5f5f5;
+}
+
+.pricing-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.pricing-heading h2 {
+    font-size: 42px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.pricing-heading p {
+    font-size: 20px;
+    color: #777;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.pricing-card {
+    background: #fff;
+    padding: 40px 30px;
+    text-align: center;
+    transition: .35s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .08);
+}
+
+.pricing-card h5 {
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #888;
+    font-weight: 700;
+}
+
+.pricing-card span {
+    display: block;
+    color: #4caf50;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 66px;
+    font-weight: 300;
+    color: #666;
+    margin: 15px 0;
+}
+
+.price small {
+    font-size: 28px;
+    vertical-align: top;
+}
+
+.active .price {
+    color: #4caf50;
+}
+
+.session {
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.pricing-card h4 {
+    font-size: 28px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-card li {
+    padding: 13px;
+    color: #777;
+    font-size: 15px;
+}
+
+.pricing-card li:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.pricing-card button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    background: #fff;
+    letter-spacing: 2px;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.active button {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+}
+
+.pricing-card button:hover {
+    background: #4caf50;
+    color: #fff;
+}
+
+/* Laptop */
+
+@media(max-width:1200px) {
+
+    .pricing-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px) {
+
+    .pricing-section {
+        padding: 70px 15px;
+    }
+
+    .pricing-heading h2 {
+        font-size: 28px;
+    }
+
+    .pricing-heading p {
+        font-size: 15px;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .price {
+        font-size: 54px;
+    }
+
+    .pricing-card {
+        padding: 35px 25px;
+    }
+
+}

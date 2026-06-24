@@ -1,0 +1,114 @@
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: url("/src/assets/images/homesl.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    will-change: background-position;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, .45);
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 600px;
+
+    margin-left: 80px;
+    margin-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    line-height: 1.1;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    font-weight: 800;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 550px;
+    margin-bottom: 35px;
+}
+
+.hero-btn {
+
+    background: #54c651;
+
+    border: none;
+
+    color: white;
+
+    padding: 18px 42px;
+
+    font-size: 15px;
+
+    letter-spacing: 2px;
+
+    border-radius: 35px;
+
+    transition: .35s;
+}
+
+
+.hero-btn:hover {
+
+    background: #3fb13d;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-left: 80px;
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        margin-left: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: left;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}

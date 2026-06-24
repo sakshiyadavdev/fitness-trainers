@@ -1,0 +1,84 @@
+.join-section {
+    background: whitesmoke;
+    padding: 90px 0;
+}
+
+.join-heading {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.join-heading h2 {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.join-heading p {
+    color: #888;
+    font-size: 15px;
+}
+
+.join-card {
+    text-align: center;
+    max-width: 360px;
+    margin: auto;
+}
+
+.join-icon {
+    font-size: 48px;
+    color: #50b848;
+    margin-bottom: 25px;
+}
+
+.join-card h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.join-card p {
+    color: #8a8a8a;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 28px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join-card button {
+    border: 1px solid #d8d8d8;
+    background: #fff;
+    color: #555;
+    padding: 12px 32px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.join-card button:hover {
+    background: #50b848;
+    color: #fff;
+    border-color: #50b848;
+}
+
+@media(max-width:991px) {
+
+    .join-section {
+        padding: 70px 20px;
+    }
+
+    .join-heading {
+        margin-bottom: 50px;
+    }
+
+    .join-card {
+        margin-bottom: 40px;
+    }
+
+}

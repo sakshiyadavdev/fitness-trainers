@@ -1,0 +1,156 @@
+.schedule-section {
+    background: #f5f5f5;
+    padding: 90px 0;
+}
+
+.schedule-heading {
+    text-align: center;
+}
+
+.schedule-heading h2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #222;
+}
+
+.schedule-heading p {
+    color: #8b8b8b;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.days-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.days-tabs button {
+    border: none;
+    background: transparent;
+
+    color: #888;
+
+    font-size: 15px;
+
+    padding: 10px 22px;
+
+    transition: .3s;
+}
+
+.active-day {
+    background: #58c04d !important;
+    color: white !important;
+    border-radius: 25px;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.schedule-card {
+    background: white;
+    padding: 25px 15px;
+    text-align: center;
+    transition: .3s;
+}
+
+.schedule-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+}
+
+.icon {
+    font-size: 38px;
+    color: #58c04d;
+    margin-bottom: 20px;
+}
+
+.schedule-card span {
+    color: #999;
+    font-size: 12px;
+}
+
+.schedule-card h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.schedule-card p {
+    color: #777;
+}
+
+.days-tabs button {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #8d8d8d;
+    font-size: 15px;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.days-tabs button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.days-tabs button.active-day {
+    background: #59c34a;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    box-shadow: none;
+}
+
+@media (max-width: 992px) {
+
+    .schedule-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .schedule-heading h2 {
+        font-size: 34px;
+    }
+
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .days-tabs {
+        gap: 10px;
+    }
+
+    .days-tabs button {
+        font-size: 14px;
+    }
+}
+
+.days-tabs button:hover {
+    color: #59c34a;
+}
+
+.days-tabs .active-day:hover {
+    color: white;
+}
+
+.no-data {
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    color: #888;
+    font-size: 18px;
+}
