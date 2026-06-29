@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 
 import Lenis from "lenis";
 import "lenis/dist/lenis.css";
+import { BrowserRouter } from "react-router-dom";
 
 AOS.init({
   duration: 1000,
@@ -32,6 +33,8 @@ requestAnimationFrame(raf);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

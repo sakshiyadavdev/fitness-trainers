@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import "./css/Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
@@ -84,16 +85,16 @@ function Navbar() {
 
                         <li className="nav-item dropdown custom-dropdown">
                             <button className="join-btn">
-                                JOIN WITH US
+                                JOIN OUR NETWORK
                             </button>
 
                             <ul className="dropdown-menu-custom">
                                 <li>
-                                    <a href="/find-trainer">Find a Trainer</a>
+                                    <Link to="/trainers">Find a Trainer</Link>
                                 </li>
 
                                 <li>
-                                    <a href="/become-trainer">Become a Trainer</a>
+                                    <Link to="/become-trainer">Become a Trainer</Link>
                                 </li>
                             </ul>
                         </li>

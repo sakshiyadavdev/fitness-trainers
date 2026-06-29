@@ -36,7 +36,7 @@ function FitnessBanner() {
 
                 <h2>Commit To Be Fit</h2>
 
-                <p>Join with Us Now</p>
+                <p>Find an accredited service provider.</p>
 
             </div>
 

@@ -11,8 +11,8 @@ function JoinUs() {
           className="join-heading"
           data-aos="fade-up"
         >
-          <h2>JOIN WITH US</h2>
-          <p>See the difference.</p>
+          <h2>JOIN OUR NETWORK</h2>
+          <p>Your health is in your hands.</p>
         </div>
 
         <div className="row justify-content-center">

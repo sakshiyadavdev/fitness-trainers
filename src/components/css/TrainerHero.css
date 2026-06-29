@@ -1,0 +1,99 @@
+.trainer-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  
+    background-image: url("../../assets/images/trainer3.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+    overflow: hidden;
+  }
+  
+  .trainer-hero-overlay {
+    position: absolute;
+    inset: 0;
+  
+    background: rgba(0, 0, 0, 0.45);
+  
+    display: flex;
+    align-items: center;
+  
+    z-index: 2;
+  }
+  
+  .trainer-content {
+    color: #fff;
+  }
+  
+  .trainer-subtitle {
+    color: #57c84d;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+  }
+  
+  .trainer-content h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 25px;
+  }
+  
+  .trainer-description {
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #f2f2f2;
+  }
+  
+  /* Tablet */
+  
+  @media (max-width: 992px) {
+    .trainer-content h1 {
+      font-size: 52px;
+    }
+  
+    .trainer-description {
+      font-size: 18px;
+    }
+  }
+  
+  /* Mobile */
+  
+  @media (max-width: 768px) {
+    .trainer-hero {
+      height: 80vh;
+      background-attachment: scroll;
+    }
+  
+    .trainer-content {
+      text-align: center;
+    }
+  
+    .trainer-content h1 {
+      font-size: 38px;
+    }
+  
+    .trainer-description {
+      max-width: 100%;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .trainer-content h1 {
+      font-size: 30px;
+    }
+  
+    .trainer-subtitle {
+      font-size: 13px;
+    }
+  
+    .trainer-description {
+      font-size: 15px;
+    }
+  }

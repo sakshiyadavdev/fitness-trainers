@@ -6,8 +6,23 @@ import {
     FaEnvelope,
     FaGlobe,
 } from "react-icons/fa";
+import ReCAPTCHA from "react-google-recaptcha";
+import { useState } from "react";
 
 function Footer() {
+    const [captchaValue, setCaptchaValue] = useState(null);
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (!captchaValue) {
+            alert("Please verify that you are not a robot.");
+            return;
+        }
+
+        alert("Message sent!");
+    };
+
     return (
         <footer className="footer">
 
@@ -48,7 +63,7 @@ function Footer() {
                         <div className="footer-contact">
 
                             <p>
-                                <FaPhoneAlt /> +91 9876543210
+                                <FaPhoneAlt /> 727-403-4010
                             </p>
 
                             <p>
@@ -73,27 +88,21 @@ function Footer() {
 
                         <h4>DROP US A LINE</h4>
 
-                        <form>
+                        <form onSubmit={handleSubmit}>
+                            <input type="text" placeholder="Name" required />
 
-                            <input
-                                type="text"
-                                placeholder="Name"
+                            <input type="email" placeholder="Email" required />
+
+                            <textarea placeholder="Message" required></textarea>
+
+                            <ReCAPTCHA
+                                sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+                                onChange={(value) => setCaptchaValue(value)}
                             />
-
-                            <input
-                                type="email"
-                                placeholder="Email"
-                            />
-
-                            <textarea
-                                rows="4"
-                                placeholder="Message"
-                            ></textarea>
 
                             <button type="submit">
-                                SEND MESSAGE
+                                Send Message
                             </button>
-
                         </form>
 
                     </div>

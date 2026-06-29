@@ -1,0 +1,105 @@
+.trainer-filter-section {
+    padding: 90px 0 70px;
+    background: #fff;
+}
+
+.filter-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.filter-heading h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #222;
+}
+
+.filter-heading p {
+    color: #777;
+    font-size: 18px;
+}
+
+.filter-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.filter-wrapper select {
+    width: 600px;
+    height: 56px;
+
+    border: 1px solid #ddd;
+
+    padding: 0 18px;
+
+    font-size: 16px;
+
+    border-radius: 4px;
+
+    outline: none;
+
+    background: white;
+}
+
+.filter-wrapper button {
+    width: 260px;
+    height: 56px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background: #4caf50;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.filter-wrapper button:hover {
+    background: #3d9442;
+}
+
+@media (max-width:991px) {
+
+    .filter-wrapper {
+        flex-direction: column;
+    }
+
+    .filter-wrapper select,
+    .filter-wrapper button {
+        width: 100%;
+    }
+
+    .filter-heading h2 {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .trainer-filter-section {
+        padding: 70px 20px;
+    }
+
+    .filter-heading h2 {
+        font-size: 28px;
+    }
+
+    .filter-heading p {
+        font-size: 16px;
+    }
+
+}
